@@ -29,9 +29,11 @@ function onCountrySearch(e) {
         countryList.innerHTML = '';
         countryInfo.innerHTML = '';
       } else if (countries.length === 1) {
+        countryInfo.innerHTML = '';
         createCountryInfo(countries);
         countryList.innerHTML = '';
       } else {
+        countryList.innerHTML = '';
         createCountryList(countries);
         countryInfo.innerHTML = '';
       }
